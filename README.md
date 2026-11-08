@@ -18,5 +18,5 @@ A simulated Site Reliability Engineering environment built to demonstrate high-a
 
 1. [x] Deploy infrastructure-as-code baseline (Docker/Compose).
 2. [x] Configure Grafana dashboards to monitor latency (SLIs) and error budgets.
-3. [ ] Inject simulated load/chaos traffic to trigger service degradation.
-4. [ ] Define automated container failover/recovery rules to maintain uptime.
+3. [x] Inject simulated load/chaos traffic to trigger service degradation (`load_generator.py`).
+4. [x] Define automated container failover/recovery rules and scale microservice capacity dynamically.

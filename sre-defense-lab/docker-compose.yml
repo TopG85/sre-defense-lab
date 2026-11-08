@@ -4,7 +4,8 @@ services:
   mission-app:
     build: .
     ports:
-      - "5001:5000"
+      - "5000"
+
     restart: always
 
   prometheus:
