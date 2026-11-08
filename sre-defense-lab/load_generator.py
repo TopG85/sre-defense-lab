@@ -2,8 +2,8 @@ import time
 import requests
 import concurrent.futures
 
-# Target our local running defense application
-URL = "http://localhost:5000/input"
+# 1. FIXED: Pointing to our stable, unblocked port 5001
+URL = "http://localhost:5001/input"
 
 def send_packet():
     try:
@@ -22,7 +22,8 @@ def flood_system():
         while True:
             futures = [executor.submit(send_packet) for _ in range(20)]
             concurrent.futures.wait(futures)
-            time.sleep(0.1) # Tiny pause between waves
+            # 2. FIXED: Pausing for 1 full second to let the metrics engine catch its breath
+            time.sleep(1.0) # Tiny pause between waves
 
 if __name__ == '__main__':
     flood_system()

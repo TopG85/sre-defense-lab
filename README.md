@@ -13,6 +13,7 @@ A simulated Site Reliability Engineering environment built to demonstrate high-a
 - **Infrastructure Traffic Routing:** Solved a localized host port conflict by re-routing application containers from Port 5000 to Port 5001.
 - **Data Pipeline Activation:** Created and configured a custom `prometheus.yml` file utilizing internal Docker network gateways to bridge telemetry streams.
 - **Timezone Sync Calibration:** Configured Grafana dashboard viewports to track browser time-clocks to prevent monitoring visibility lag.
+- **Root-Cause Failure Diagnosis:** Documented application blackout mechanics under heavy stress testing (`load_generator.py`). Proven via Prometheus target states that complete system failure surfaces as a `DOWN` state via `context deadline exceeded` scraper blackouts rather than registering as metric lines inside Grafana.
 
 ## Current SRE Objectives
 
