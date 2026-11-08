@@ -20,3 +20,7 @@ A simulated Site Reliability Engineering environment built to demonstrate high-a
 2. [x] Configure Grafana dashboards to monitor latency (SLIs) and error budgets.
 3. [x] Inject simulated load/chaos traffic to trigger service degradation (`load_generator.py`).
 4. [x] Define automated container failover/recovery rules and scale microservice capacity dynamically.
+
+## I Built
+
+"I built a containerized Python data pipeline using Docker and automated its infrastructure orchestration using Docker Compose. To mirror a defense environment, I set up a Prometheus engine scraping internal network host gateways and wired it into a live Grafana dashboard to track service level indicators in real-time. Finally, I built a multi-threaded load-testing script to simulate a traffic attack, diagnosed port allocations under fire, and dynamically scaled the app instances to absorb the stress load."
